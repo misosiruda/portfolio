@@ -90,7 +90,7 @@
           <th>작성일</th>
           <th>조회</th>
         </tr>
-        <c:forEach var="board" items="${boardList }">
+        <c:forEach var="board" items="${boardList}">
           <tr class="record">
             <td>${board.num }</td>
             <td><a href="#" 
@@ -106,7 +106,7 @@
 			
 			<!-- 첫페이지로  -->
 			<li>
-				<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list?page=1${searchStatus}">&lt;&lt;</a>
+				<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=1${searchStatus}">&lt;&lt;</a>
 			</li>
 			
 			<!-- 이전 페이지로 -->
@@ -116,14 +116,14 @@
 					<a href="javascript:;">&lt;</a>
 				</c:when>
 				<c:otherwise>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list?page=${pi.page - 1}${searchStatus}">&lt;</a>
+					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page - 1}${searchStatus}">&lt;</a>
 				</c:otherwise>
 			</c:choose>
 			</li>
 			
-			<c:forEach var="p" begin="${pi.startPage}" end="${pi.endPage}">
+			<c:forEach var="p" begin="${1}" end="${maxpage}">
 				<li>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list?page=${p}${searchStatus}" <c:if test="${p == pi.page }">
+					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == pi.page }">
 						class = 'current_page'
 				</c:if>>${p}</a>
 				</li>
@@ -132,18 +132,18 @@
 			<!-- 다음페이지로 -->
 			<li>
 			<c:choose>
-				<c:when test="${pi.page == pi.maxPage}">
+				<c:when test="${page == maxpage}">
 					<a href="javascript:;">&gt;</a>
 				</c:when>
 				<c:otherwise>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list?page=${pi.page + 1}${searchStatus}">&gt;</a>
+					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page + 1}${searchStatus}">&gt;</a>
 				</c:otherwise>
 			</c:choose>
 			</li>
 			
 			<!-- 끝페이지로  -->
 			<li>
-				<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list?page=${pi.maxPage}${searchStatus}">&gt;&gt;</a>
+				<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${maxpage}${searchStatus}">&gt;&gt;</a>
 			</li>
 		</ul>
     </div>

@@ -94,6 +94,28 @@ public class MisoDAO {
         }
     }
 
+    public int getMaxPage() {
+        String sql = "SELECT count(*) AS count FROM board";
+        int count = 0;
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            conn = DBManager.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                count = rs.getInt("count");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBManager.close(conn, pstmt, rs);
+        }
+        System.out.println((int) Math.ceil(count / 10));
+        return (int) Math.ceil(count / 10);
+    }
+
     public ArrayList<BoardVO> selectAllBoards(int pageNum) {
         pageNum--;
         String sql = "SELECT count(*) AS count FROM board";
@@ -113,8 +135,8 @@ public class MisoDAO {
             sql = "SELECT * FROM board WHERE num <= ? AND num > ? ORDER BY num DESC";
             conn = DBManager.getConnection();
             pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1, count - pageNum);
-            pstmt.setInt(2, count - pageNum - 10);
+            pstmt.setInt(1, count - (pageNum * 10));
+            pstmt.setInt(2, count - (pageNum * 10) - 10);
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 BoardVO bVo = new BoardVO();

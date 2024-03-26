@@ -14,10 +14,15 @@ public class BoardListAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String url = "/board/boardList.jsp";
-		MisoDAO bDao = MisoDAO.getInstance();
+		MisoDAO mDao = MisoDAO.getInstance();
+		int maxPage = mDao.getMaxPage();
+		request.setAttribute("maxpage", maxPage);
 		String s = request.getParameter("page");
 		int pageNum = Integer.parseInt(s != null ? s : "1");
-		List<BoardVO> boardList = bDao.selectAllBoards(pageNum);
+		if (pageNum == 1) {
+			request.setAttribute("page", 1);
+		}
+		List<BoardVO> boardList = mDao.selectAllBoards(pageNum);
 		request.setAttribute("boardList", boardList);
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
