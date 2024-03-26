@@ -1,0 +1,51 @@
+[
+  {
+    "name":"한우분쇄육/유기(300g/국내산)",
+    "price": 21300,
+    "pictureURL":"./img/recommend/060104006_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"분쇄육(300g?우리보리살림돼지)",
+    "price": 4900,
+    "pictureURL":"./img/recommend/060107010_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"다진마늘/난지형(유:200g)",
+    "price": 5700,
+    "pictureURL":"./img/recommend/090502010_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"양파(1kg)",
+    "price": 4100,
+    "pictureURL":"./img/recommend/050508001_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"대파(700g)",
+    "price": 3250,
+    "pictureURL":"./img/recommend/050510003_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"진간장(480ml-원액간장)",
+    "price": 6400,
+    "pictureURL":"./img/recommend/090401061_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"찹쌀가루(500g/유)",
+    "price": 6500,
+    "pictureURL":"./img/recommend/090103084_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "name":"아카시아스틱꿀선물모음",
+    "price": 31300,
+    "pictureURL":"./img/dicount/060501156_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"홍삼농축액(100g)",
+    "price": 89800,
+    "pictureURL":"./img/dicount/120201014_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"부대찌개(550g)",
+    "price": 8500,
+    "pictureURL":"./img/dicount/100601031_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"돼지고기고추장구운주먹밥(100g*4개)",
+    "price": 5700,
+    "pictureURL":"./img/dicount/080504070_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"밤(유/600g)",
+    "price": 6700,
+    "pictureURL":"./img/dicount/040201002_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"표고버섯(200g)",
+    "price": 4100,
+    "pictureURL":"./img/dicount/050716014_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"양배추브로콜리액(100ml*30봉)",
+    "price": 26700,
+    "pictureURL":"./img/dicount/120101107_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"자연그대로 녹차 트러블스팟(20㎖)",
+    "price": 9500,
+    "pictureURL":"./img/dicount/130501136_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"남도김치(2kg)",
+    "price": 21000,
+    "pictureURL":"./img/dicount/100101024_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"돼지고기동그랑땡(제수용/800g)",
+    "price": 12100,
+    "pictureURL":"./img/dicount/060302053_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"쌍화차(70ml*30봉)",
+    "price": 77000,
+    "pictureURL":"./img/dicount/120101006_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"갓김치(500g)",
+    "price": 6200,
+    "pictureURL":"./img/dicount/100103014_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.miso.daodto.loginVO"/>
+    <fullyQualifiedTypeName name="com.miso.controller.action.LogoutAction"/>
+    <fullyQualifiedTypeName name="com.miso.daodto.MisoDAO"/>
+    <fullyQualifiedTypeName name="com.miso.daodto.BoardVO"/>
+</qualifiedTypeNameHistroy>

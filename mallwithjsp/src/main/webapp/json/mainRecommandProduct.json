@@ -1,0 +1,58 @@
+[
+  {
+    "name":"대파(700g)",
+    "price": 3250,
+    "pictureURL":"./img/mainRecommand/050510003_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"과일잼모음2호(4종)",
+    "price": 26200,
+    "pictureURL":"./img/mainRecommand/080601059_1_300.jpg",
+    "option":"",
+    "url":"#"
+  },
+  {
+    "name":"피꼬막(피조개/1.5kg)",
+    "price": 9700,
+    "pictureURL":"./img/mainRecommand/070502239_1_300.jpg",
+    "option":"",
+    "url":"#"
+  },
+  {
+    "name":"양파(1kg)",
+    "price": 4100,
+    "pictureURL":"./img/mainRecommand/050508001_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"사과잼(280g)",
+    "price": 4300,
+    "pictureURL":"./img/mainRecommand/080601058_1_300.jpg",
+    "option":"",
+    "url":"#"
+  },
+  {
+    "name":"자연그대로 녹차 트러블스팟(20㎖)",
+    "price": 9500,
+    "pictureURL":"./img/mainRecommand/130501136_1_300.jpg",
+    "option":"discount",
+    "url":"#"
+  },
+  {
+    "name":"양파(2kg)",
+    "price": 7000,
+    "pictureURL":"./img/mainRecommand/050508005_1_300.jpg",
+    "option":"popular",
+    "url":"#"
+  },
+  {
+    "name":"미효담 어성초 비건토너(보충용/150㎖)",
+    "price": 12500,
+    "pictureURL":"./img/mainRecommand/130501139_1_300.jpg",
+    "option":"",
+    "url":"#"
+  }
+]

@@ -1,0 +1,5 @@
+package com.miso.controller.action;
+
+public class LoginAction {
+
+}

@@ -1,0 +1,34 @@
+package com.miso.controller;
+
+import com.miso.controller.action.Action;
+import com.miso.controller.action.HomepageAction;
+import com.miso.controller.action.LoginCheckAction;
+
+public class ActionFactory {
+
+    private ActionFactory() {
+    }
+
+    private static ActionFactory instance;
+
+    public static ActionFactory getInstance() {
+        if (instance == null) {
+            instance = new ActionFactory();
+        }
+        return instance;
+    }
+
+    public Action getAction(String command) {
+        Action action = null;
+
+        if (command == null) {
+            action = new HomepageAction();
+        } else if (command.equals("hompage")) {
+            action = new HomepageAction();
+        } else if (command.equals("login_check")) {
+            action = new LoginCheckAction();
+        }
+
+        return action;
+    }
+}

@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+#wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #76bd42;
+}
+
+table {
+    width: 100% !important;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+table td,
+th {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+}
+
+th {
+    background: #76bd42;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #76bd42;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+i,
+em,
+address {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -0.025em;
+    cursor: pointer;
+}
+
+div {
+    display: block;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    min-width: 1200px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+.head {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.upperHead {
+    width: 1200px;
+    height: 70px;
+}
+
+#logo {
+    width: 300px;
+    height: 50px;
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.login {
+    width: 450px;
+    height: 30px;
+    float: right;
+    margin: 20px 0px 0 0;
+}
+
+.login ul {
+    position: absolute;
+    top: 20px;
+    font-size: 0;
+    line-height: 1;
+}
+
+.login li {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 11px;
+    vertical-align: top;
+}
+
+.login li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 1px;
+    height: 8px;
+    background: #bbb;
+}
+
+.login li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.login li:first-child:before {
+    display: none;
+}
+
+.login li a {
+    font-size: 13px;
+    line-height: 19px;
+    color: #666;
+}
+
+.login li ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    z-index: 3;
+    margin-left: 5px;
+    padding: 10px 20px 20px 20px;
+    background: #fff;
+    border: solid 1px #ddd;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    transform: translateX(-50%);
+}
+
+.login li button {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 19px;
+    vertical-align: top;
+    color: #666;
+}
+
+.login li button:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 10px;
+    height: 6px;
+    background: url('/img/header/icoMyMenu.png') no-repeat right top;
+}
+
+.lowerHead {
+    width: 1200px;
+    height: 60px;
+    padding: 10px 30px;
+}
+
+.category {
+    width: 720px;
+    height: 100%;
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+.category .allProduct {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 16px 35px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    background: none;
+    border: 0;
+}
+
+.category .allProduct:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.category .allProduct:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.category .allProduct span {
+    display: block;
+    line-height: 28px;
+}
+
+.category .allProduct span:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 21px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.categoryMain {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.categoryMain li {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.search {
+    width: 370px;
+    height: 100%;
+    float: right;
+    margin: 5px 0 0 0;
+}
+
+.searchCon {
+    display: inline-block;
+    padding: 0 6px 0 19px;
+    border-radius: 20px;
+    vertical-align: top;
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+}
+
+.searchCon > input,
+.searchCon > button {
+    vertical-align: top;
+    background: none;
+    border: 0;
+}
+
+#searchKeyword {
+    width: 255px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 40px;
+}
+
+.searchCon .btnSearch {
+    width: 40px;
+    height: 40px;
+    background: url(/img/header/btnSearch.png) no-repeat center center;
+}
+
+.board_paging {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 480px;
+    margin: auto;
+}
+
+.board_paging > li {
+    float: left;
+}
+
+.board_paging a {
+    text-decoration: none;
+    color: #282A35;
+    width: 40px;
+    display: block;
+    text-align: center;
+}
+
+.board_paging a.current_page {
+    border-bottom: 2px solid #282A35;
+    font-weight: bold;
+}
