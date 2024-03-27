@@ -8,15 +8,18 @@
 </head>
 <body>
 <script type="text/javascript">
-if (window.name == "update") {
-window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_update_form&num=${param.num}";
-} else if (window.name == 'delete') {
-alert('삭제되었습니다.');
-window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_delete&num=${param.num}";
-} else if (window.name == 'view') {
-window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_view&num=${param.num}"
-}
-window.close();
+    if (window.name == "update")
+    {
+        window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_update_form&num=${param.num}";
+    } else if (window.name == 'delete')
+    {
+        alert('삭제되었습니다.');
+        window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_delete&num=${param.num}";
+    } else if (window.name == 'view')
+    {
+        window.opener.parent.location.href = "/mallwithjsp/manager.do?command=board_view&num=${param.num}"
+    }
+    window.close();
 </script>
 </body>
 </html>

@@ -310,3 +310,8 @@
 0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:09:59 +0900] "GET /mallwithjsp/manager.do?command=board_list HTTP/1.1" 200 8021
 0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:09:59 +0900] "GET /mallwithjsp/script/board.js HTTP/1.1" 404 842
 0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:09:59 +0900] "GET /img/header/btnSearch.png HTTP/1.1" 404 839
+127.0.0.1 - - [27/Mar/2024:10:10:51 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:10:52 +0900] "GET /mallwithjsp/test.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:10:52 +0900] "GET /mallwithjsp/manager.do?command=board_list HTTP/1.1" 200 7419
+0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:10:52 +0900] "GET /mallwithjsp/script/board.js HTTP/1.1" 404 842
+0:0:0:0:0:0:0:1 - - [27/Mar/2024:10:10:52 +0900] "GET /img/header/btnSearch.png HTTP/1.1" 404 839
