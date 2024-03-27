@@ -89,7 +89,7 @@ a {
 	<div class="login-wrapper">
 		<h2>login</h2>
 		<form method="post"
-			action="http://localhost:8080/mallwithjsp/manager.do?command=login_check"
+			action="/mallwithjsp/manager.do?command=login_check"
 			id="login-form" name="frm">
 			<input type="hidden" name="check" value="${check}">
 			<input type="text" name="userid" placeholder="id">

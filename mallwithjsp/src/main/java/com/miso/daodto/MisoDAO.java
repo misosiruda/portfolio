@@ -112,30 +112,23 @@ public class MisoDAO {
         } finally {
             DBManager.close(conn, pstmt, rs);
         }
-        return (int) Math.ceil(count / 10) + 1;
+        count = count % 10 == 0 ? (int) Math.ceil(count / 10) : (int) Math.ceil(count / 10) + 1;
+        return count;
     }
 
     public ArrayList<BoardVO> selectAllBoards(int pageNum) {
-        pageNum--;
-        String sql = "SELECT count(*) AS count FROM board";
+        pageNum--; // 페이지 번호는 0부터 시작하도록 수정
+        String sql = "SELECT * FROM board ORDER BY num DESC LIMIT ?, ?";
         ArrayList<BoardVO> list = new ArrayList<>();
-        int count = 0;
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
             conn = DBManager.getConnection();
             pstmt = conn.prepareStatement(sql);
-            rs = pstmt.executeQuery();
-            if (rs.next()) {
-                count = rs.getInt("count");
-            }
-            DBManager.close(conn, pstmt, rs);
-            sql = "SELECT * FROM board WHERE num <= ? AND num > ? ORDER BY num DESC";
-            conn = DBManager.getConnection();
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1, count - (pageNum * 10));
-            pstmt.setInt(2, count - (pageNum * 10) - 10);
+            int start = pageNum * 10; // 페이지의 시작 인덱스 계산
+            pstmt.setInt(1, start); // LIMIT의 첫 번째 매개변수에 페이지의 시작 인덱스 설정
+            pstmt.setInt(2, 10); // 한 페이지에 표시될 게시글 수 설정
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 BoardVO bVo = new BoardVO();
