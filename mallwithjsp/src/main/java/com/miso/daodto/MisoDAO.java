@@ -112,8 +112,7 @@ public class MisoDAO {
         } finally {
             DBManager.close(conn, pstmt, rs);
         }
-        System.out.println((int) Math.ceil(count / 10));
-        return (int) Math.ceil(count / 10);
+        return (int) Math.ceil(count / 10) + 1;
     }
 
     public ArrayList<BoardVO> selectAllBoards(int pageNum) {

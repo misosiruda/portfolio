@@ -15,16 +15,17 @@ public class BoardListAction implements Action {
 			throws ServletException, IOException {
 		String url = "/board/boardList.jsp";
 		MisoDAO mDao = MisoDAO.getInstance();
-		int pageMax = mDao.getMaxPage();
-		request.setAttribute("maxpage", pageMax);
+		int maxPage = mDao.getMaxPage();
+		request.setAttribute("maxpage", maxPage);
 		String s = request.getParameter("page");
 		int pageNum = Integer.parseInt(s != null ? s : "1");
+		if (pageNum == 1) {
+			request.setAttribute("page", 1);
+		}
 		request.setAttribute("page", pageNum);
 		int pageStart = (int) (Math.floor((pageNum - 0.1) / 10)) * 10 + 1;
 		int pageEnd = (int) (Math.floor((pageNum - 0.1) / 10)) + 10;
-		if (pageMax <= pageEnd) {
-			pageEnd = pageMax;
-		}
+		System.out.println(pageNum + ", " + pageStart + ", " + pageEnd);
 		request.setAttribute("pagestart", pageStart);
 		request.setAttribute("pageend", pageEnd);
 		List<BoardVO> boardList = mDao.selectAllBoards(pageNum);

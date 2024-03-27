@@ -81,7 +81,7 @@
       <table class="list">
         <tr>
           <td colspan="5" style="border: white; text-align: right">
-          <a  href="/mallwithjsp/manager.do?command=board_write_form">글쓰기</a></td>
+          <a  href="/mallwithjsp/manager.do?command=board_write_form">1:1 문의</a></td>
         </tr>
         <tr>
           <th>번호</th>
@@ -116,18 +116,31 @@
 					<a href="javascript:;">&lt;</a>
 				</c:when>
 				<c:otherwise>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page-1}${searchStatus}">&lt;</a>
+					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page - 1}${searchStatus}">&lt;</a>
 				</c:otherwise>
 			</c:choose>
 			</li>
-			<c:forEach var="p" begin="${pagestart}" end="${pageend}">
-				<li>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == page}">
-						class = 'current_page'
-				</c:if>>${p}</a>
-				</li>
-			</c:forEach>
-		
+			<c:choose>
+				<c:when test="${pagemax <c:when pageend}">
+					<c:forEach var="p" begin="${pagestart}" end="${pagemax}">
+						<li>
+							<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == pi.page }">
+								class = 'current_page'
+						</c:if>>${p}</a>
+						</li>
+					</c:forEach>
+				</c:when>
+				<c:otherwise>
+					<c:forEach var="p" begin="${pagestart}" end="${pageend}">
+						<li>
+							<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == pi.page }">
+								class = 'current_page'
+						</c:if>>${p}</a>
+						</li>
+					</c:forEach>
+				</c:otherwise>
+			</c:choose>
+				
 			
 			<!-- 다음페이지로 -->
 			<li>
@@ -136,7 +149,7 @@
 					<a href="javascript:;">&gt;</a>
 				</c:when>
 				<c:otherwise>
-					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page+1}${searchStatus}">&gt;</a>
+					<a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page + 1}${searchStatus}">&gt;</a>
 				</c:otherwise>
 			</c:choose>
 			</li>
