@@ -33,7 +33,7 @@
 							<%
 								} else {
 							%>
-									<a href="http://localhost:8080/mallwithjsp/manager.do?command=logout">로그아웃</a>
+									<a href="/mallwithjsp/manager.do?command=logout">로그아웃</a>
 							<%
 								}
 							%>
@@ -42,7 +42,7 @@
 							<a href="#">나의한살림</a>
 						</li>
 						<li>
-							<a href=http://localhost:8080/mallwithjsp/manager.do?command=board_list>고객센터</a>
+							<a href=/mallwithjsp/manager.do?command=board_list>고객센터</a>
 						</li>
 						<li><a href="#">매장안내</a></li>
 					</ul>
@@ -105,7 +105,7 @@
     <ul class="board_paging">
     <!-- 첫페이지로  -->
     <li>
-      <a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=1${searchStatus}">&lt;&lt;</a>
+      <a href="/mallwithjsp/manager.do?command=board_list&page=1${searchStatus}">&lt;&lt;</a>
     </li>
     <!-- 이전 페이지로 -->
     <li>
@@ -114,13 +114,13 @@
         <a href="javascript:;">&lt;</a>
       </c:when>
       <c:otherwise>
-        <a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page-1}${searchStatus}">&lt;</a>
+        <a href="/mallwithjsp/manager.do?command=board_list&page=${page-1}${searchStatus}">&lt;</a>
       </c:otherwise>
     </c:choose>
     </li>
     <c:forEach var="p" begin="${pagestart}" end="${pageend}">
       <li>
-        <a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == page}">
+        <a href="/mallwithjsp/manager.do?command=board_list&page=${p}${searchStatus}" <c:if test="${p == page}">
           class = 'current_page'
       </c:if>>${p}</a>
       </li>
@@ -132,13 +132,13 @@
         <a href="javascript:;">&gt;</a>
       </c:when>
       <c:otherwise>
-        <a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${page+1}${searchStatus}">&gt;</a>
+        <a href="/mallwithjsp/manager.do?command=board_list&page=${page+1}${searchStatus}">&gt;</a>
       </c:otherwise>
     </c:choose>
     </li>
     <!-- 끝페이지로  -->
     <li>
-      <a href="http://localhost:8080/mallwithjsp/manager.do?command=board_list&page=${maxpage}${searchStatus}">&gt;&gt;</a>
+      <a href="/mallwithjsp/manager.do?command=board_list&page=${maxpage}${searchStatus}">&gt;&gt;</a>
     </li>
   </ul>
 </div>

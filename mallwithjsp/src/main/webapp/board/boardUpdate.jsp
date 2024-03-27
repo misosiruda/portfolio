@@ -33,7 +33,7 @@
             <%
               } else {
             %>
-                <a href="http://localhost:8080/mallwithjsp/manager.do?command=logout">로그아웃</a>
+                <a href="/mallwithjsp/manager.do?command=logout">로그아웃</a>
             <%
               }
             %>
@@ -42,7 +42,7 @@
             <a href="#">나의한살림</a>
           </li>
           <li>
-            <a href=http://localhost:8080/mallwithjsp/manager.do?command=board_list>고객센터</a>
+            <a href=/mallwithjsp/manager.do?command=board_list>고객센터</a>
           </li>
           <li><a href="#">매장안내</a></li>
         </ul>
